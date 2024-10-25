@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="examenDAPP_OCME.MainPage">
+    <StackLayout>
+        <Frame BackgroundColor="#660033" Padding="24" CornerRadius="0">
+            <Label Text="Mini calculadora" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Frame BackgroundColor="#660033" Padding="24" CornerRadius="0">
+           <Label Text="Omar Cota Medina Eliezer" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+        </Frame>
+        
+        <Label Text="N1"/>
+        <Entry x:Name="Numero1" Keyboard="Numeric"/>
+
+        <Label Text="N2"/>
+        <Entry x:Name="Numero2" Keyboard="Numeric"/>
+
+        <Button Text="Sumar" Clicked="Sumar" BackgroundColor="DarkRed" TextColor="White"/>
+        <Button Text="Restar" Clicked="Restar" BackgroundColor="DarkRed" TextColor="White"/>
+        <Button Text="Dividir" Clicked="Dividir" BackgroundColor="DarkRed" TextColor="White"/>
+        <Button Text="Multiplicar" Clicked="Multiplicar" BackgroundColor="DarkRed" TextColor="White"/>
+        <Label x:Name="R" Text="Resultado" FontSize="Large" />
+    </StackLayout>
+</ContentPage>
